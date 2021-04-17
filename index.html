@@ -1,0 +1,787 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <title>Masjid Jami' Nurul Huda</title>         
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="shortcut icon" href="img/favicon.png">
+
+        <!------------Responsive css file------------->         
+        <link href="css/responsive.css" rel="stylesheet" type="text/css">  
+
+        <!-------------Magnific popup css file------------->
+        <link href="css/magnific-popup.css" rel="stylesheet" type="text/css"> 
+
+        <!-------------Magnific popup css file------------->        
+        <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css"> 
+        <link href="css/owl.theme.default.min.css" rel="stylesheet" type="text/css">              
+                                                    
+        <!-------------Font Awesome cdn files------------->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+                
+        <!-------------Font Awesome cdn ends------------->
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"> 
+
+        <!-------------Animate css file------------->
+        <link href="css/animate.css" type="text/css" rel="stylesheet">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <!-------------Owl Carousel Js file------------->
+        <script src="js/owl.carousel.min.js" type="text/javascript"></script>  
+
+        <!-------------Magnific popup Js file------------->
+        <script src="js/jquery.magnific-popup.min.js" type="text/javascript"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <!-- Start of Async Drift Code -->
+        <script>
+        !function() {
+            var t;
+            if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0, 
+            t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+            t.factory = function(e) {
+            return function() {
+                var n;
+                return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
+            };
+        }, t.methods.forEach(function(e) {
+            t[e] = t.factory(e);
+        }), t.load = function(t) {
+            var e, n, o, i;
+            e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"), 
+            o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js", 
+            n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
+        });
+        }();
+        drift.SNIPPET_VERSION = '0.3.1';
+        drift.load('u4k3vh36tbfn');
+        </script>
+        <!-- End of Async Drift Code -->
+    </head>
+    <body onload="getJadwalSholat(), realTimeClock()">
+        <div class="entire-content">
+        <!--------Navigation starts-------->
+        <nav class="navbar  navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                <!---------Responsive button------------>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navi">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                       
+                </button>
+                    <a href="" class="navbar-brand "><img src="img/logo-masjid-jami-nurul-huda.png"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="navi"> 
+                <!---------Navigation menus------------>
+                <ul class="nav navbar-nav navbar-right  ">
+                    <li><a href="#slider" class="smooth-scroll">Beranda</a></li>
+                    <li><a href="#jadwal-sholat" class="smooth-scroll">Jadwal Sholat</a></li>
+                    <li><a href="#resmi" class="smooth-scroll">Visi & Misi</a></li>
+                    <li><a href="#pengurus" class="smooth-scroll">Pengurus</a></li>
+                    <!-- <li><a href="#testimonial" class="smooth-scroll">About us</a></li> -->
+                    <li><a href="#acara" class="smooth-scroll">Kegiatan</a></li>                    
+                    <!-- <li><a href="#contact_area" class="smooth-scroll">Carrier</a></li> -->
+                    <li><a href="#map" class="location smooth-scroll">Lokasi</a></li>
+                    
+                </ul>
+                <!---------Navigation Menus End------------>
+                </div>          
+            </div>         
+            </nav>
+        <!--------Navigation Ends-------->
+        
+        <!---------------Slider Section Start------------->
+        <section class="slider text-center" id="slider">              
+            <div class="slider-overlay">
+                <div class="slider-content">
+                    <div>
+                        <p><h3>Masjid Jami' Nurul Huda</h3></p>
+                    </div>
+                    <div class="text"></div>
+                    <div class="social-networks">
+                        <a href="" class="fa fa-facebook"></a>
+                        <a href="" class="fa fa-twitter"></a>
+                        <a href="" class="fa fa-instagram"></a>
+                    </div>                      
+                </div>                  
+            </div>       
+        </section>        
+        <!---------------Slider Section End------------->
+        
+        <!---------------Jadwal Sholat Start------------->
+        <section class="service-area" id="jadwal-sholat">
+            <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="section-title text-center wow zoomIn" data-wow-duration=".5s" data-wow-delay=".5s">
+                                <h2><b>Jadwal Sholat</b></h2>
+                                <h4><b><p id="date"></p></b></h4>
+                                <h4><b><p id="time"></p></b></h4>
+                            </div>
+                        </div>                      
+                    </div><br><br>
+                    <div class="row wow bounceInUp"  data-wow-duration="1.2s" data-wow-delay="1.2s">
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="service-wrap text-center">
+                                <h3>Subuh</h3>
+                                <p id="subuh"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="service-wrap text-center">
+                                <h3>Dzuhur</h3>
+                                <p id="dzuhur"></p>
+                            </div>
+                        </div>  
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="service-wrap text-center">
+                                <h3>Ashar</h3>
+                                <p id="ashar"></p>
+                            </div>
+                        </div> 
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="service-wrap text-center">
+                                <h3>Maghrib</h3>
+                                <p id="maghrib"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="service-wrap text-center">
+                                <h3>Isya</h3>
+                                <p id="isya"></p>
+                            </div>
+                        </div>                        
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="service-wrap text-center">
+                            <h3>Imsak</h3>
+                            <p id="imsak"></p>
+                        </div> 
+                    </div>                     
+                </div>                 
+            </div>                       
+        </section>
+        <!------Jadwal Sholat End-------->
+
+        <!--------Dokumentasi Start-------->
+        <div class="distance" id="resmi">
+            <div class="section-title text-center wow zoomIn" data-wow-duration=".8s" data-wow-delay=".8s" id="title">
+                <h2>
+                    <b>Visi & Misi</b>
+                </h2>
+                <h4>
+                    <b>Masjid Jami' Nurul Huda</b>
+                </h4>
+            </div>
+            <div class="dokumentasi">
+                <div class="container">
+                    <div class="row wow bounceInDown"  data-wow-duration="1.2s" data-wow-delay="1.2s">
+                        <div class="col-lg-6">
+                            <div class="img-wrapper">
+                                <a href="img/peresmian-depan.jpg" title="Foto bersama, DKM dan Kelurahan Petukangan Utara">
+                                    <img src="img/peresmian-depan.jpg" class="img-responsive" id="depan">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="img-wrapper">
+                                <a href="img/peresmian-dalam.jpg" title="Foto bersama, DKM dan Kelurahan Petukangan Utara">
+                                    <img src="img/peresmian-dalam.jpg" class="img-responsive" id="belakang">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="visi_misi wow bounceInDown" data-wow-duration="1.2s" data-wow-delay="1.2s">
+                <div class="container">
+                    <div class="row">
+                        <div class="visi">
+                            <div class="col-lg-6">
+                                <h3 class="visi">Visi</h3>
+                                <hr class="garis">
+                                <p class="vis">1. Terwujudnya Masjid sebagai pusat ibadah ritual (mahdhah) dan sosial (ghair mahdhah).</p>
+                            </div>
+                        </div>
+                        <div class="misi">
+                            <div class="col-lg-6">
+                                <h3 class="misi">Misi</h3>
+                                <hr class="garis">
+                                <p class="mis">1. Meningkatkan kualitas iman warga Kelurahan Petukangan Utara dan sekitarnya.</p>
+                                <p class="mis">2. Meningkatkan kualitas sarana/prasarana pendukung.</p>
+                                <p class="mis">3. Berkontribusi terhadap peningkatan kesejahteraan sosial, ekonomi dan budaya masyarakat sekitar masjid.</p>
+                                <p class="mis">4. Membangun jaringan antar masjid, organisasi sosial, sektor swasta (private sector) dan pemerintah.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>      
+        <!--------Dokumentasi End-------->
+
+        <!--------Pengurus Start----------->
+        <div class="distance" id="pengurus">
+            <section class="teams">
+                <div class="container text-center wow zoomIn"  data-wow-duration="1s" data-wow-delay="1s">
+                    <h2>
+                        <b>SUSUNAN DEWAN KEMAKMURAN MASJID <br> 
+                        MASJID JAMI’ NURUL HUDA</b>
+                    </h2><br>
+                    <p>
+                        <h4>KAVLING CERMAI KELURAHAN PETUKANGAN UTARA <br> 
+                        KECAMATAN PESANGGRAHAN JAKARTA SELATAN<br>
+                        PERIODE 2021-2024</h4>
+                    </p>
+                </div>
+                <div class="pengurus">
+                    <div class="container wow zoomInUp"  data-wow-duration="1.2s" data-wow-delay="1.2s">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div id="team-members" class="owl-carousel owl-theme">
+                                    <div class="team-member">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th class="pangkat">Pelindung</th>
+                                                    <th class="karakter">:</th>
+                                                    <th class="nama">1. Ketua DMI Kecamatan Pesanggrahan</th>
+                                                </tr>
+                                            </thead>
+                                            <thead>
+                                                <tr>
+                                                    <th class="pangkat"></th>
+                                                    <th class="karakter"></th>
+                                                    <th class="nama">2. Lurah Petukangan Utara Pesanggrahan</th>
+                                                </tr>
+                                            </thead>
+                                            <thead>
+                                                <tr>
+                                                    <th class="pangkat"></th>
+                                                    <th class="karakter"></th>
+                                                    <th class="nama">3. Ketua Rukun Tetangga RT 04/RW 03 Petukangan Utara</th>
+                                                </tr>
+                                            </thead>
+                                            <thead>
+                                                <tr>
+                                                    <th class="pangkat"></th>
+                                                    <th class="karakter"></th>
+                                                    <th class="nama">4. Ketua Rukun Tetangga RT 09/RW 03 Petukangan Utara</th>
+                                                </tr>
+                                            </thead>
+                                            <thead>
+                                                <tr>
+                                                    <th class="pangkat"></th>
+                                                    <th class="karakter"></th>
+                                                    <th class="nama">5. Om Beng</th>
+                                                </tr>
+                                            </thead>
+                                        </table>
+                                    </div>
+                                    <div class="team-member">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th class="pangkat">Penasehat</th>
+                                                    <th class="karakter">:</th>
+                                                    <th class="nama">1. Wanrise</th>
+                                                </tr>
+                                            </thead>
+                                            <thead>
+                                                <tr>
+                                                    <th class="pangkat"></th>
+                                                    <th class="karakter"></th>
+                                                    <th class="nama">2. H. Basuni</th>
+                                                </tr>
+                                            </thead>
+                                        </table>
+                                    </div>
+                                    <div class="team-member">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th class="pangkat">Ketua</th>
+                                                    <th class="karakter">:</th>
+                                                    <th class="nama">Tengku Syahdana</th>
+                                                </tr>
+                                            </thead>
+                                            <thead>
+                                                <tr>
+                                                    <th class="pangkat">Ketua Harian</th>
+                                                    <th class="karakter">:</th>
+                                                    <th class="nama">Tulus Yasmudi</th>
+                                                </tr>
+                                            </thead>
+                                            <thead>
+                                                <tr>
+                                                    <th class="pangkat">Sekretaris</th>
+                                                    <th class="karakter">:</th>
+                                                    <th class="nama">H. Wingky</th>
+                                                </tr>
+                                            </thead>
+                                            <thead>
+                                                <tr>
+                                                    <th class="pangkat">Bendahara</th>
+                                                    <th class="karakter">:</th>
+                                                    <th class="nama">Supini</th>
+                                                </tr>
+                                            </thead>
+                                        </table>
+                                    </div>
+                                    <div class="team-member">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th colspan="3" class="bidang">I. BIDANG PENDIDIKAN, DAKWAH DAN HARI BESAR ISLAM</th>
+                                                </tr>
+                                            </thead>
+                                            <thead>
+                                                <tr>
+                                                    <th class="pangkat">Koordinator</th>
+                                                    <th class="karakter">:</th>
+                                                    <th class="nama">Wahyu</th>
+                                                </tr>
+                                            </thead>
+                                            <thead>
+                                                <tr>
+                                                    <th class="pangkat">Anggota</th>
+                                                    <th class="karakter">:</th>
+                                                    <th class="nama">1. Yudha</th>
+                                                </tr>
+                                            </thead>
+                                            <thead>
+                                                <tr>
+                                                    <th class="pangkat"></th>
+                                                    <th class="karakter"></th>
+                                                    <th class="nama">2. Fahmil</th>
+                                                </tr>
+                                            </thead>
+                                            <thead>
+                                                <tr>
+                                                    <th class="pangkat"></th>
+                                                    <th class="karakter"></th>
+                                                    <th class="nama">3. Ust. Mardan</th>
+                                                </tr>
+                                            </thead>
+                                            <thead>
+                                                <tr>
+                                                    <th class="pangkat"></th>
+                                                    <th class="karakter"></th>
+                                                    <th class="nama">4. Firmansyah</th>
+                                                </tr>
+                                            </thead>
+                                        </table>
+                                    </div>
+                                    <div class="team-member">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th colspan="3" class="bidang">II. BIDANG HUMAS DAN PENGEMBANGAN SARPRAS</th>
+                                                </tr>
+                                            </thead>
+                                            <thead>
+                                                <tr>
+                                                    <th class="pangkat">Koordinator</th>
+                                                    <th class="karakter">:</th>
+                                                    <th class="nama">Drs. Reza Fachmi</th>
+                                                </tr>
+                                            </thead>
+                                            <thead>
+                                                <tr>
+                                                    <th class="pangkat">Anggota</th>
+                                                    <th class="karakter">:</th>
+                                                    <th class="nama">1. Fadil</th>
+                                                </tr>
+                                            </thead>
+                                            <thead>
+                                                <tr>
+                                                    <th class="pangkat"></th>
+                                                    <th class="karakter"></th>
+                                                    <th class="nama">2. Doni</th>
+                                                </tr>
+                                            </thead>
+                                            <thead>
+                                                <tr>
+                                                    <th class="pangkat"></th>
+                                                    <th class="karakter"></th>
+                                                    <th class="nama">3. Ruly</th>
+                                                </tr>
+                                            </thead>
+                                            <thead>
+                                                <tr>
+                                                    <th class="pangkat"></th>
+                                                    <th class="karakter"></th>
+                                                    <th class="nama">4. Rudy</th>
+                                                </tr>
+                                            </thead>
+                                        </table>
+                                    </div>
+                                    <div class="team-member">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th colspan="3" class="bidang">III. BIDANG PENGADAAN DAN PEMELIHARAAN INVENTARIS MASJID</th>
+                                                </tr>
+                                            </thead>
+                                            <thead>
+                                                <tr>
+                                                    <th class="pangkat">Koordinator</th>
+                                                    <th class="karakter">:</th>
+                                                    <th class="nama">Agus</th>
+                                                </tr>
+                                            </thead>
+                                            <thead>
+                                                <tr>
+                                                    <th class="pangkat">Anggota</th>
+                                                    <th class="karakter">:</th>
+                                                    <th class="nama">1. Aryo Nuristanto</th>
+                                                </tr>
+                                            </thead>
+                                            <thead>
+                                                <tr>
+                                                    <th class="pangkat"></th>
+                                                    <th class="karakter"></th>
+                                                    <th class="nama">2. Setiyadi Sulasmono</th>
+                                                </tr>
+                                            </thead>
+                                            <thead>
+                                                <tr>
+                                                    <th class="pangkat"></th>
+                                                    <th class="karakter"></th>
+                                                    <th class="nama">3. Ryan</th>
+                                                </tr>
+                                            </thead>
+                                            <thead>
+                                                <tr>
+                                                    <th class="pangkat"></th>
+                                                    <th class="karakter"></th>
+                                                    <th class="nama">4. A. Suwadi</th>
+                                                </tr>
+                                            </thead>
+                                        </table>
+                                    </div>
+                                    <div class="team-member">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th colspan="3" class="bidang">IV. BIDANG PEMBERDAYAAN UMMAT, WAKAF DAN UKM</th>
+                                                </tr>
+                                            </thead>
+                                            <thead>
+                                                <tr>
+                                                    <th class="pangkat">Koordinator</th>
+                                                    <th class="karakter">:</th>
+                                                    <th class="nama">H. Soni</th>
+                                                </tr>
+                                            </thead>
+                                            <thead>
+                                                <tr>
+                                                    <th class="pangkat">Anggota</th>
+                                                    <th class="karakter">:</th>
+                                                    <th class="nama">1. Ust. Agus, Lc, MA</th>
+                                                </tr>
+                                            </thead>
+                                        </table>
+                                    </div>
+                                    <div class="team-member">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th colspan="3" class="bidang">V. BIDANG DOKUMENTASI, INFOGRAFIS DAN DIGITALISASI</th>
+                                                </tr>
+                                            </thead>
+                                            <thead>
+                                                <tr>
+                                                    <th class="pangkat">Koordinator</th>
+                                                    <th class="karakter">:</th>
+                                                    <th class="nama">Yogha</th>
+                                                </tr>
+                                            </thead>
+                                            <thead>
+                                                <tr>
+                                                    <th class="pangkat">Anggota</th>
+                                                    <th class="karakter">:</th>
+                                                    <th class="nama">1. Sandy Rahmanto</th>
+                                                </tr>
+                                            </thead>
+                                            <thead>
+                                                <tr>
+                                                    <th class="pangkat"></th>
+                                                    <th class="karakter"></th>
+                                                    <th class="nama">2. Dedes Fernando</th>
+                                                </tr>
+                                            </thead>
+                                            <thead>
+                                                <tr>
+                                                    <th class="pangkat"></th>
+                                                    <th class="karakter"></th>
+                                                    <th class="nama">3. Ahmad Siswanto</th>
+                                                </tr>
+                                            </thead>
+                                            <thead>
+                                                <tr>
+                                                    <th class="pangkat"></th>
+                                                    <th class="karakter"></th>
+                                                    <th class="nama">4. Abi</th>
+                                                </tr>
+                                            </thead>
+                                        </table>
+                                    </div>
+                                    <div class="team-member">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th colspan="3" class="bidang">VI. BIDANG KEAMANAN, KETERTIBAN DAN KEBERSIHAN</th>
+                                                </tr>
+                                            </thead>
+                                            <thead>
+                                                <tr>
+                                                    <th class="pangkat">Koordinator</th>
+                                                    <th class="karakter">:</th>
+                                                    <th class="nama">Toto</th>
+                                                </tr>
+                                            </thead>
+                                            <thead>
+                                                <tr>
+                                                    <th class="pangkat">Anggota</th>
+                                                    <th class="karakter">:</th>
+                                                    <th class="nama">1. Edi</th>
+                                                </tr>
+                                            </thead>
+                                            <thead>
+                                                <tr>
+                                                    <th class="pangkat"></th>
+                                                    <th class="karakter"></th>
+                                                    <th class="nama">2. Tommi Harton</th>
+                                                </tr>
+                                            </thead>
+                                            <thead>
+                                                <tr>
+                                                    <th class="pangkat"></th>
+                                                    <th class="karakter"></th>
+                                                    <th class="nama">3. Sumitro</th>
+                                                </tr>
+                                            </thead>
+                                            <thead>
+                                                <tr>
+                                                    <th class="pangkat"></th>
+                                                    <th class="karakter"></th>
+                                                    <th class="nama">4. Harno</th>
+                                                </tr>
+                                            </thead>
+                                            <thead>
+                                                <tr>
+                                                    <th class="pangkat"></th>
+                                                    <th class="karakter"></th>
+                                                    <th class="nama">5. Emil</th>
+                                                </tr>
+                                            </thead>
+                                        </table>
+                                    </div>
+                                    <div class="team-member">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th colspan="3" class="bidang">VII. BIDANG KEPEMUDAAN DAN OLAHRAGA</th>
+                                                </tr>
+                                            </thead>
+                                            <thead>
+                                                <tr>
+                                                    <th class="pangkat">Koordinator</th>
+                                                    <th class="karakter">:</th>
+                                                    <th class="nama">Ahmad Faisal</th>
+                                                </tr>
+                                            </thead>
+                                            <thead>
+                                                <tr>
+                                                    <th class="pangkat">Anggota</th>
+                                                    <th class="karakter">:</th>
+                                                    <th class="nama">1. Yudi</th>
+                                                </tr>
+                                            </thead>
+                                            <thead>
+                                                <tr>
+                                                    <th class="pangkat"></th>
+                                                    <th class="karakter"></th>
+                                                    <th class="nama">2. Hendra</th>
+                                                </tr>
+                                            </thead>
+                                            <thead>
+                                                <tr>
+                                                    <th class="pangkat"></th>
+                                                    <th class="karakter"></th>
+                                                    <th class="nama">3. Fajar Fadillah</th>
+                                                </tr>
+                                            </thead>
+                                            <thead>
+                                                <tr>
+                                                    <th class="pangkat"></th>
+                                                    <th class="karakter"></th>
+                                                    <th class="nama">4. Riski Maulana</th>
+                                                </tr>
+                                            </thead>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!--------Pengurus End----------->
+        <!------------Kegiatan Start------------->  
+        <div class="distance2">
+            <section class="latest-news-area" id="acara">x`
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="section-title text-center wow zoomIn" data-wow-duration=".2s" data-wow-delay=".2s">
+                                <h2><b>Kegiatan Masjid Jami' Nurul Huda</b></h2>
+                            </div>
+                        </div>                    
+                    </div><br><br><br><br>
+                    <div class="row">
+                        <div class="news-active">
+                            <div class="col-xs-4 wow zoomInLeft" data-wow-duration=".4s" data-wow-delay=".4s">
+                                <div class="boxshadow">
+                                    <div class="donasi">
+                                        <span>Yuk Donasi</span>
+                                    </div>
+                                    <div class="news-img">
+                                        <img  src="img/Donasi.jpg"  class="img-responsive">     
+                                    </div>
+                                    <div class="bersama">
+                                        <span>Alangkah Baiknya Bisa Berbagi Untuk Sesama</span>
+                                    </div>
+                                    </div>                         
+                                </div>
+                            </div>
+                            <div class="col-xs-8 wow zoomInRight" data-wow-duration=".4s" data-wow-delay=".4s">
+                                <div id="kegiatan" class="owl-carousel owl-theme">
+                                    <div class="latest-news-wrap">
+                                        <div class="news-img">
+                                            <img  src="img/1.jpg"  class="img-responsive">
+                                            <div class="deat">
+                                                <span>31 Desember 2020</span>                                    
+                                            </div>                                
+                                        </div>
+                                        <div class="news-content">
+                                            <span>Safari Dakwah</span>
+                                            <p>
+                                                who is such a man as does not want to get success life is not meant for work life is gone healht is gone wealht is gone if charcter is gone then get it everything is gone life is very precious you know if know then great.Life is not meant for work okey
+                                            </p><br>
+                                            <a href="">Read more..</a>
+                                        </div>                         
+                                    </div>
+                                    <div class="latest-news-wrap">
+                                        <div class="news-img">
+                                            <img  src="img/2.jpg"  class="img-responsive">
+                                            <div class="deat">
+                                                <span>28 Desember 2020</span>                                
+                                            </div>                                
+                                        </div>
+                                        <div class="news-content">
+                                            <span>Yasinan</span>
+                                            <p>
+                                                who is such a man as does not want to get success life is not meant for work life is gone healht is gone wealht is gone if charcter is gone then get it everything is gone life is very precious you know if know then great.Life is not meant for work okey
+                                            </p><br>
+                                            <a href="">Read more..</a>
+                                        </div>                         
+                                    </div>
+                                    <div class="latest-news-wrap">
+                                        <div class="news-img">
+                                            <img  src="img/3.jpg"  class="img-responsive">
+                                            <div class="deat">
+                                                <span>26 Desember 2020</span>                                    
+                                            </div>                                
+                                        </div>
+                                        <div class="news-content">
+                                            <span>Kerja Bakti</span>
+                                            <p>
+                                                who is such a man as does not want to get success life is not meant for work life is gone healht is gone wealht is gone if charcter is gone then get it everything is gone life is very precious you know if know then great.Life is not meant for work okey
+                                            </p><br>
+                                            <a href="">Read more..</a>
+                                        </div>                         
+                                    </div>
+                                </div>              
+                            </div>
+                        </div>         
+                    </div>      
+                </div>      
+            </section>
+        </div>
+        <!------------Contact Starts------------->
+        <section class="contact-area" id="contact_area">
+            <div class="container-fluid">
+                <div class="row">                     
+                    <div class="contact-infos">
+                        <div class="col-md-4 text-center">
+                            <div class="contact-item wow fadeInLeft" data-wow-duration=".3s" data-wow-delay=".3s">
+                                <span class="contact-icon"><i class="fa fa-map-marker"></i></span>
+                                <p class="contact-detail">
+                                    Jalan Kavling Cermai Raya RT.004 RW.03 Kelurahan Petukangan Utara<br>
+                                    Kecamatan Pesanggrahan Jakarta Selatan 12260                                     
+                                </p>
+                            </div>                             
+                        </div>     
+                        <div class="col-md-4 text-center">
+                            <div class="contact-item wow fadeInLeft" data-wow-duration=".6s" data-wow-delay=".6s">
+                                <span class="contact-icon"><i class="fa fa-envelope"></i></span>
+                                <p class="contact-detail">
+                                    masjidnurulhuda@co.id                                  
+                                </p>
+                            </div>                             
+                        </div> 
+                        <div class="col-md-4 text-center">
+                            <div class="contact-item wow fadeInLeft" data-wow-duration=".9s" data-wow-delay=".9s">
+                                <span class="contact-icon"><i class="fa fa-phone"></i></span>
+                                <p class="contact-detail">
+                                    08578888888                                  
+                                </p>
+                            </div>                             
+                        </div>                         
+                    </div>              
+                </div>  
+            </div>        
+        </section>
+
+        <section class="maps wow fadeInUp" id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d833.808765442482!2d106.75263237490782!3d-6.226068851919962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1f72a493e45%3A0xbfecd153d3a9aa9b!2sMasjid%20Jami&#39;%20Nurul%20Huda!5e0!3m2!1sid!2sid!4v1618694774314!5m2!1sid!2sid" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </section>
+        <!-----------Maps----------------->
+        <!-------------Footer--------------->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <div class="social-icon">
+                        <a href=""><i class="fa fa-facebook wow fadeInLeft" data-wow-duration=".3s" data-wow-delay=".3s" ></i></a>  
+                        <a href=""><i class="fa fa-twitter wow fadeInLeft" data-wow-duration=".6s" data-wow-delay=".6s"></i></a>  
+                        <a href=""><i class="fa fa-instagram wow fadeInLeft" data-wow-duration=".9s" data-wow-delay=".9s"></i></a>
+                        </div> <br>
+                        <div class="copyright">
+                            <p class="footerlogo">
+                                &copy; Sandy Rahmanto
+                                <!-- <img src="img/logo.png"> -->
+                            </p>
+                            <div class="bordernow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/jquery.ripples-min.js" type="text/javascript"></script>  
+        <script src="js/typed.min.js" type="text/javascript"></script>
+        <script src="js/main.js" type="text/javascript"></script>
+        <script src="js/smoothscroll.js" type="text/javascript"></script>
+        <script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
+        <script src="js/wow.min.js" type="text/javascript"></script>
+        <script src="js/jadwalsholat.js" type="text/javascript"></script>
+        <script src="js/waktu.js" text="text/javascript"></script>
+    </body>
+</html>
