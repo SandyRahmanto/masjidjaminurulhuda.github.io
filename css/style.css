@@ -121,7 +121,7 @@ body {
 .slider-overlay {
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.65);
+    /* background: rgba(0, 0, 0, 0.65); */
     position: relative;
 }
 
@@ -402,12 +402,10 @@ body {
 
 .vis {
     text-align: left;
-    font-size: 15px;
 }
 
 .mis {
     text-align: left;
-    font-size: 15px;
 }
 
 /*=======================================
@@ -429,23 +427,23 @@ body {
 .pangkat {
     padding-left: 0px;
     padding-right: 10px;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .karakter {
     padding-left: 0px;
     padding-right: 3px;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .nama {
     padding-left: 1px;
     padding-right: 50px;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .bidang {
-    font-size: 15px;
+    font-size: 14px;
 }
 
 /*=======================================
